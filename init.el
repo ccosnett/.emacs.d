@@ -1,4 +1,3 @@
-
 ;; Key bindings:
 (global-set-key "\C-cl"   'aline)
 (global-set-key "\R"     'implication)
@@ -40,10 +39,12 @@
     (interactive)
         (progn
         (insert "\\begin{align*}\n\\ \n\\end{align*}")
-        (kbd "TAB")
-        (backward-char 16)
+
+        (backward-char 14)
     )
 	)
+
+
 
 
 ;;--------------------------------------------------------------------
