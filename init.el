@@ -1,3 +1,4 @@
+
 ;; Key bindings:
 (global-set-key "\C-cl"   'aline)
 (global-set-key "\R"     'implication)
@@ -7,7 +8,8 @@
 (global-set-key "\ej"     'jump-out)
 (global-set-key "\C-cj"   'jump-out)
 (global-set-key "\em"     'escape-parentheses)
-(global-set-key "\C-cm"   'dollar-pair)
+(global-set-key "\C-cm"   'two-dollar-pair)
+(global-set-key "\C-c4"   'dollar-pair)
 (global-set-key "\ep"     'paren-pair)
 (global-set-key "\C-cp"   'paren-pair)
 (global-set-key "\eo"     'brace-pair)
@@ -40,7 +42,7 @@
         (progn
         (insert "\\begin{align*}\n\\ \n\\end{align*}")
 
-        (backward-char 14)
+n        (backward-char 14)
     )
 	)
 
@@ -68,6 +70,27 @@
     (backward-char )))
 ;;--------------------------------------------------------------------
 ;;--------------------------------------------------------------------
+(defun dollar-pair ()
+  "We insert a pair of dollar signs and position
+    point in between them."
+  (interactive)
+  (progn
+    (insert "$\\color{#C00}{ }$")
+    (backward-char 3)))
+
+;;--------------------------------------------------------------------
+;;--------------------------------------------------------------------
+(defun two-dollar-pair ()
+  "We insert a pair of dollar signs and position
+    point in between them."
+  (interactive)
+  (progn
+    (insert "$$\\color{#C00}{ }$$")
+    (backward-char 3)))
+
+
+;;--------------------------------------------------------------------
+;;--------------------------------------------------------------------
 (defun fracktion ()
   "We insert a pair of dollar signs and position
     point in between them."
@@ -75,6 +98,7 @@
   (progn
     (insert "\\frac{}{}")
     (backward-char 3)))
+
 ;;--------------------------------------------------------------------
 ;;--------------------------------------------------------------------
 (defun intertext ()
