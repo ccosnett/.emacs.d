@@ -1,3 +1,0 @@
-#!/bin/sh
-export GPU_MAX_ALLOC_PERCENT=100
-./ethdcrminer64 -epool us1.ethermine.org:4444 -ewal 0xe24b5fdd5daff98f33eca6aab6ee417309f192ac.Miner01 -epsw x -mode 1 -tt 68 -allpools 1

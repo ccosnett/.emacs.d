@@ -1,3 +1,8 @@
+(setq TeX-auto-save t)
+(setq TeX-parse-self t)
+(setq TeX-save-query nil)
+;(setq TeX-PDF-mode t)
+
 ;; Key bindings:
 (global-set-key "\C-c3"   'hash4)
 (global-set-key "\C-ci"   'pmatrix4)
