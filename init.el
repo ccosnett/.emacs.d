@@ -227,8 +227,10 @@ n        (backward-char 14)
 ;;--------------------------------------------------------------------
 ;;--------------------------------------------------------------------
 ;; ATTEMPTING TO SET FRAME SIZE
-(add-to-list 'default-frame-alist '(height .63))
-(add-to-list 'default-frame-alist '(width .114))
+;;(add-to-list 'default-frame-alist '(height . 63))
+;;(add-to-list 'default-frame-alist '(width . 114))
+(add-to-list 'default-frame-alist '(height . 63))
+(add-to-list 'default-frame-alist '(width . 114))
 ;;--------------------------------------------------------------------
 ;;--------------------------------------------------------------------
 
@@ -260,7 +262,7 @@ n        (backward-char 14)
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :background "gray98" :foreground "gray0" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 140 :width normal :foundry "nil" :family "Ubuntu"))))
+ '(default ((t (:inherit nil :stipple nil :background "gray98" :foreground "gray0" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 150 :width normal :foundry "nil" :family "Ubuntu"))))
  '(minibuffer-prompt ((t (:foreground "dark blue"))))
  '(shadow ((t (:foreground "dark cyan")))))
 
