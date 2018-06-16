@@ -1,3 +1,22 @@
+;;---------------------------------------------------- MATHEMATICA MODE--------------------------------------
+
+;; Tell emacs where is your personal elisp lib dir
+(add-to-list 'load-path "~/.emacs.d/wolfram-mode/")
+
+;; load the packaged named xyz.
+;;(load "wolfram-mode") ;; best not to include the ending “.el” or “.elc”
+(autoload 'wolfram-mode "wolfram-mode" nil t)
+
+;;  (autoload 'wolfram-mode "wolfram-mode" nil t)
+(autoload 'run-wolfram "wolfram-mode" nil t)
+(setq wolfram-program "/Applications/Mathematica.app/Contents/MacOS/MathKernel")
+(add-to-list 'auto-mode-alist '("\\.m$" . wolfram-mode))
+(setq wolfram-path "directory-in-Mathematica-$Path") ;; e.g. on Linux ~/.Mathematica/Applications
+;;---------------------------------------------------- MATHEMATICA MODE--------------------------------------
+
+
+
+;;----------------------------------------------------STUFF
 (setq TeX-auto-save t)
 (setq TeX-parse-self t)
 (setq TeX-save-query nil)
@@ -262,7 +281,7 @@ n        (backward-char 14)
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :background "gray98" :foreground "gray0" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 150 :width normal :foundry "nil" :family "Ubuntu"))))
+ '(default ((t (:inherit nil :stipple nil :background "gray98" :foreground "gray0" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 150 :width normal :foundry "nil" :family "DejaVu Sans Mono"))))
  '(minibuffer-prompt ((t (:foreground "dark blue"))))
  '(shadow ((t (:foreground "dark cyan")))))
 
